@@ -13,13 +13,13 @@ INSERT INTO tb_book (title, score, book_year, genre, platforms, img_url, short_d
 INSERT INTO tb_book (title, score, book_year, genre, platforms, img_url, short_description, long_description) VALUES ('A física e o mundo que nos rodeia', 2.2, 1994, 'Física', 'Livro Físico','https://m.media-amazon.com/images/I/41Er5NGxLVS._SY445_SX342_.jpg', 'Fonte da imagem: https://m.media-amazon.com/images/I/41Er5NGxLVS._SY445_SX342_.jpg ', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorum illum placeat eligendi, quis maiores veniam. Incidunt dolorum, nisi deleniti dicta odit voluptatem nam provident temporibus reprehenderit blanditiis consectetur tenetur. Dignissimos blanditiis quod corporis iste, aliquid perspiciatis architecto quasi tempore ipsam voluptates ea ad distinctio, sapiente qui, amet quidem culpa.');
 INSERT INTO tb_book (title, score, book_year, genre, platforms, img_url, short_description, long_description) VALUES ('A Coragem de Ser Imperfeito', 1.5, 2016, 'autoajuda', 'Kindle', 'https://m.media-amazon.com/images/I/41Er5NGxLVS._SY445_SX342_.jpg', 'Fonte da imagem: https://m.media-amazon.com/images/I/41Er5NGxLVS._SY445_SX342_.jpg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorum illum placeat eligendi, quis maiores veniam. Incidunt dolorum, nisi deleniti dicta odit voluptatem nam provident temporibus reprehenderit blanditiis consectetur tenetur. Dignissimos blanditiis quod corporis iste, aliquid perspiciatis architecto quasi tempore ipsam voluptates ea ad distinctio, sapiente qui, amet quidem culpa.');
 
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 1, 0);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 2, 1);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 3, 2);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 9, 3);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 4, 4);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 5, 0);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 6, 1);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 7, 2);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 8, 3);
-INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 10, 4);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 0, 0);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 1, 1);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 2, 2);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (1, 8, 3);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 3, 4);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 4, 0);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 5, 1);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 6, 2);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 7, 3);
+INSERT INTO tb_belonging (list_id, book_id, position) VALUES (2, 9, 4);

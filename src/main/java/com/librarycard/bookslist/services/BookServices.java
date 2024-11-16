@@ -9,6 +9,10 @@ import org.springframework.transaction.annotation.Transactional;
 import com.librarycard.bookslist.dto.BookMinDTO;
 import com.librarycard.bookslist.entities.Book;
 import com.librarycard.bookslist.repositories.BookRepository;
+
+
+import projections.BookMinProjection;
+
 import com.librarycard.bookslist.dto.BookDTO;
 
 @Service
@@ -29,5 +33,12 @@ public class BookServices {
         List<Book> result = bookRepository.findAll();
         List<BookMinDTO> dto = result.stream().map(x -> new BookMinDTO(x)).toList();
         return dto;
+    }
+
+    @Transactional (readOnly = true)
+    public List <BookMinDTO> findByList(Long listId) {
+        List<BookMinProjection> result = bookRepository.searchByList(listId);
+        return result.stream().map(x -> new BookMinDTO(x)).toList();
+
     }
 }

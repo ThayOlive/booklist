@@ -2,6 +2,8 @@ package com.librarycard.bookslist.dto;
 
 import com.librarycard.bookslist.entities.Book;
 
+import projections.BookMinProjection;
+
 public class BookMinDTO {
 
     private Long id;
@@ -22,6 +24,17 @@ public class BookMinDTO {
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
 }
+
+
+    public BookMinDTO(BookMinProjection projection){
+
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
+}
+    
 
     public Long getId() {
         return id;
