@@ -12,7 +12,7 @@ import projections.BookMinProjection;
 public interface BookRepository extends JpaRepository< Book , Long>{
 
     @Query(nativeQuery = true, value = """
-		SELECT tb_book.id, tb_book.title, tb_book.book_year AS `year`, tb_book.img_url AS imgUrl,
+		SELECT tb_book.id, tb_book.title, tb_book.book_year AS bookYear, tb_book.img_url AS imgUrl,
 		tb_book.short_description AS shortDescription, tb_belonging.position
 		FROM tb_book
 		INNER JOIN tb_belonging ON tb_book.id = tb_belonging.book_id

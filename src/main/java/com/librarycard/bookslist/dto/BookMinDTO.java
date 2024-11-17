@@ -30,7 +30,7 @@ public class BookMinDTO {
 
         id = projection.getId();
         title = projection.getTitle();
-        year = projection.getYear();
+        year = projection.getBookYear();
         imgUrl = projection.getImgUrl();
         shortDescription = projection.getShortDescription();
 }
@@ -44,7 +44,7 @@ public class BookMinDTO {
         return title;
     }
 
-    public Integer getYear() {
+    public Integer getBookYear() {
         return year;
     }
 
